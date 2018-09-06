@@ -65,14 +65,14 @@
 
 @font-face {
   font-family: "dante";
-  src: url("../fonts/dante/fontello.eot");
-  src: url("../fonts/dante/fontello.eot?#iefix") format("embedded-opentype"), url("../fonts/dante/fontello.woff") format("woff"), url("../fonts/dante/fontello.ttf") format("truetype"), url("../fonts/dante/fontello.svgfontello") format("svg");
+  src: url("https://cdn.rawgit.com/aliq03/medium/2b91874f/fontello.eot");
+  src: url("https://cdn.rawgit.com/aliq03/medium/2b91874f/fontello.eot?#iefix") format("embedded-opentype"), url("https://cdn.rawgit.com/aliq03/medium/2b91874f/fontello.woff") format("woff"), url("https://cdn.rawgit.com/aliq03/medium/2b91874f/fontello.ttf") format("truetype"), url("https://cdn.rawgit.com/aliq03/medium/2b91874f/fontello.svgfontello") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "dante-tooltip";
-  src: url("../fonts/dante/dante.eot");
-  src: url("../fonts/dante/dante.eot?#iefix") format("embedded-opentype"), url("../fonts/dante/dante.woff") format("woff"), url("../fonts/dante/dante.ttf") format("truetype"), url("../fonts/dante/dante.svgdante") format("svg");
+  src: url("https://cdn.rawgit.com/aliq03/medium/2b91874f/dante.eot");
+  src: url("https://cdn.rawgit.com/aliq03/medium/2b91874f/dante.eot?#iefix") format("embedded-opentype"), url("https://cdn.rawgit.com/aliq03/medium/2b91874f/dante.woff") format("woff"), url("https://cdn.rawgit.com/aliq03/medium/2b91874f/dante.ttf") format("truetype"), url("https://cdn.rawgit.com/aliq03/medium/2b91874f/dante.svgdante") format("svg");
   font-weight: normal;
   font-style: normal; }
 @-webkit-keyframes pop-upwards {
