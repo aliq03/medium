@@ -192,7 +192,6 @@
 
 .dante-icon:before {
   display: inline-block;
-  font-family: "dante";
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
@@ -241,10 +240,14 @@
   content: ""; }
 
 .icon-createlink:before {
-  content: ""; }
+    content: "\F337";
+    font-size: 19px;
+}
 
 .icon-blockquote:before {
-  content: ""; }
+    content: "\F27E";
+    font-size: 19px;
+}
 
 .icon-h2:before,
 .icon-h3:before,
