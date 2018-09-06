@@ -1,4 +1,4 @@
-﻿(function() {
+(function() {
   window.Dante = {
     Editor: {
       ToolTip: {},
@@ -496,11 +496,11 @@
       this.upload_url = opts.upload_url || "/uploads.json";
       this.upload_callback = opts.upload_callback;
       this.image_delete_callback = opts.image_delete_callback;
-      this.image_caption_placeholder = opts.image_caption_placeholder || "Type caption for image (optional)";
+      this.image_caption_placeholder = opts.image_caption_placeholder || "Resim için açıklama yazın (isteğe bağlı)";
       this.oembed_url = opts.oembed_url || ("https://api.embed.ly/1/oembed?key=" + opts.api_key + "&url=");
       this.extract_url = opts.extract_url || ("https://api.embed.ly/1/extract?key=" + opts.api_key + "&url=");
       this.default_loading_placeholder = opts.default_loading_placeholder || Dante.defaults.image_placeholder;
-      this.embed_caption_placeholder = opts.embed_caption_placeholder || "Type caption for embed (optional)";
+      this.embed_caption_placeholder = opts.embed_caption_placeholder || "Video için açıklama yazın (isteğe bağlı)";
       this.store_url = opts.store_url;
       this.store_method = opts.store_method || "POST";
       this.store_success_handler = opts.store_success_handler;
@@ -524,14 +524,14 @@
       if (window.debugMode) {
         $(this.el).addClass("debug");
       }
-      titleplaceholder = opts.title_placeholder || 'Title';
+      titleplaceholder = opts.title_placeholder || 'Başlık';
       this.title_placeholder = "<span class='defaultValue defaultValue--root'>" + titleplaceholder + "</span><br>";
       this.title = opts.title || '';
       bodyplaceholder = opts.body_placeholder || 'Tell your story…';
       this.body_placeholder = "<span class='defaultValue defaultValue--root'>" + bodyplaceholder + "</span><br>";
-      embedplaceholder = opts.embed_placeholder || 'Paste a YouTube, Vine, Vimeo, or other video link, and press Enter';
+      embedplaceholder = opts.embed_placeholder || "YouTube, Vine, Vimeo veya başka bir video bağlantısını yapıştırın ve Enter'a basın";
       this.embed_placeholder = "<span class='defaultValue defaultValue--root'>" + embedplaceholder + "</span><br>";
-      extractplaceholder = opts.extract_placeholder || "Paste a link to embed content from another site (e.g. Twitter) and press Enter";
+      extractplaceholder = opts.extract_placeholder || "İçeriği başka bir siteden almak için bir bağlantı yapıştırın (ör. Twitter) ardından Enter'a basın";
       this.extract_placeholder = "<span class='defaultValue defaultValue--root'>" + extractplaceholder + "</span><br>";
       return this.initializeWidgets(opts);
     };
@@ -2621,7 +2621,7 @@
         opts = {};
       }
       this.icon = opts.icon || "icon-image";
-      this.title = opts.title || "Add an image";
+      this.title = opts.title || "Resim ekle";
       this.action = opts.action || "menu-image";
       return this.current_editor = opts.current_editor;
     };
@@ -2924,7 +2924,7 @@
         opts = {};
       }
       this.icon = opts.icon || "icon-video";
-      this.title = opts.title || "Add a video";
+      this.title = opts.title || "Video ekle";
       this.action = opts.action || "embed";
       return this.current_editor = opts.current_editor;
     };
@@ -3008,7 +3008,7 @@
         opts = {};
       }
       this.icon = opts.icon || "icon-embed";
-      this.title = opts.title || "Add an embed";
+      this.title = opts.title || "İçerik yerleştir";
       this.action = opts.action || "embed-extract";
       return this.current_editor = opts.current_editor;
     };
@@ -3121,7 +3121,7 @@
         data_action_value = b.action_value ? "data-action-value='" + b.action_value + "'" : "";
         return menu += "<button class='inlineTooltip-button scale' title='" + b.title + "' data-action='inline-menu-" + b.action + "' " + data_action_value + "> <span class='tooltip-icon " + b.icon + "'></span> </button>";
       });
-      return "<button class='inlineTooltip-button control' title='Close Menu' data-action='inline-menu'> <span class='tooltip-icon icon-plus'></span> </button> <div class='inlineTooltip-menu'> " + menu + " </div>";
+      return "<button class='inlineTooltip-button control' title='Menüyü kapat' data-action='inline-menu'> <span class='tooltip-icon icon-plus'></span> </button> <div class='inlineTooltip-menu'> " + menu + " </div>";
     };
 
     Tooltip.prototype.findWidgetByAction = function(name) {
@@ -3720,7 +3720,7 @@
 
     Menu.prototype.template = function() {
       var html;
-      html = "<div class='dante-menu-linkinput'><input class='dante-menu-input' placeholder='Paste or type a link'><div class='dante-menu-button'>x</div></div>";
+      html = "<div class='dante-menu-linkinput'><input class='dante-menu-input' placeholder='Link yazın veya yapıştırın'><div class='dante-menu-button'>x</div></div>";
       html += "<ul class='dante-menu-buttons'>";
       _.each(this.config.buttons, function(item) {
         if (item === "divider") {
