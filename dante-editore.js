@@ -528,7 +528,7 @@
       this.title_placeholder = "<span class='defaultValue defaultValue--root'>" + titleplaceholder + "</span><br>";
       this.title = opts.title || '';
       bodyplaceholder = opts.body_placeholder || 'Yazmaya başla :)';
-      this.body_placeholder = "<span class='defaultValue defaultValue--root'>" + bodyplaceholder + "</span>";
+      this.body_placeholder = "<span class='defaultValue defaultValue--root'>" + bodyplaceholder + "</span><br>";
       embedplaceholder = opts.embed_placeholder || "YouTube, Vine, Vimeo veya başka bir video bağlantısını yapıştırın ve Enter'a basın";
       this.embed_placeholder = "<span class='defaultValue defaultValue--root'>" + embedplaceholder + "</span><br>";
       extractplaceholder = opts.extract_placeholder || "İçeriği başka bir siteden almak için bir bağlantı yapıştırın (ör. Twitter) ardından Enter'a basın";
@@ -673,7 +673,7 @@
     };
 
     Editor.prototype.template = function() {
-      return "<section class='section--first section--last'> <div class='section-divider layoutSingleColumn'> <hr class='section-divider'> </div> <div class='section-content'> <div class='section-inner layoutSingleColumn'> " + (this.disable_title ? '' : this.renderTitle()) + " <p placeholder="Type something..." class='graf graf--p'>" + this.body_placeholder + "</p> </div> </div> </section>";
+      return "<section class='section--first section--last'> <div class='section-divider layoutSingleColumn'> <hr class='section-divider'> </div> <div class='section-content'> <div class='section-inner layoutSingleColumn'> " + (this.disable_title ? '' : this.renderTitle()) + " <p class='graf graf--p'>" + this.body_placeholder + "</p> </div> </div> </section>";
     };
 
     Editor.prototype.baseParagraphTmpl = function() {
