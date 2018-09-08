@@ -7,7 +7,7 @@
     },
     Article: {},
     defaults: {
-      image_placeholder: '../images/dante/media-loading-placeholder.png'
+      image_placeholder: 'https://img.webme.com/pic/a/aliq03/media-loading-placeholder.png'
     },
     version: "0.1.7"
   };
@@ -527,7 +527,7 @@
       titleplaceholder = opts.title_placeholder || 'Başlık';
       this.title_placeholder = "<span class='defaultValue defaultValue--root'>" + titleplaceholder + "</span><br>";
       this.title = opts.title || '';
-      bodyplaceholder = opts.body_placeholder || 'Tell your story…';
+      bodyplaceholder = opts.body_placeholder || 'Yazmaya başla :)';
       this.body_placeholder = "<span class='defaultValue defaultValue--root'>" + bodyplaceholder + "</span><br>";
       embedplaceholder = opts.embed_placeholder || "YouTube, Vine, Vimeo veya başka bir video bağlantısını yapıştırın ve Enter'a basın";
       this.embed_placeholder = "<span class='defaultValue defaultValue--root'>" + embedplaceholder + "</span><br>";
